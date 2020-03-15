@@ -1,0 +1,9 @@
+{
+string []course={"javascript",".net","ecmascript","golang","java"};
+int i=995;
+foreach(string c in course)
+{
+i=i+2;
+Console.Write(c.PadERight(11,'&'));
+Console.WriteLine($"{i.ToString().PadLeft(5,'*')}");
+}

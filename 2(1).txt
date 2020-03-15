@@ -1,0 +1,14 @@
+{
+string fs="程序语言:javaScript,.net,ecmascript,goland,java,其中:";
+string[]r=fs.Split(',');
+foreach(string s in r)
+Console.WriteLine(s);
+int i=0,j=0,k=0;
+foreach(string s in r)
+{
+if(s.Contains("a"))i++;
+if(s.StaetsWith("j"))j++;
+if(s.EndsWith("t"))k++;
+}
+Console.WriteLine($"包含a:{i}门,j开头:{j}门,t结尾:{k}门");
+}
